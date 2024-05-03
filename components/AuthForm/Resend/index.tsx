@@ -70,7 +70,7 @@ export default function index() {
             </CountdownCircleTimer>
           </View>
           {/* OTP input */}
-          {/* <InputOTP /> */}
+          <InputOTP />
 
           {/* button */}
           <TouchableOpacity
