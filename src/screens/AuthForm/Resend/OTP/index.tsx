@@ -38,7 +38,7 @@ export default function Index() {
           <TouchableOpacity
             style={styles.goback}
             activeOpacity={0.3}
-            onPress={() => navigation.navigate('Layout2')}>
+            onPress={() => navigation.goback()}>
             <Image
               style={{width: 8, height: 13}}
               source={require('../../../../assets/img/back.png')}></Image>
