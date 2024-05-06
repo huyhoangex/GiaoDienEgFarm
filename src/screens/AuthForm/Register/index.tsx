@@ -12,12 +12,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
 
 export default function Register() {
-<<<<<<< Updated upstream
   const navigation = useNavigation() as any;
-=======
-   const navigation = useNavigation() as any;
-   
->>>>>>> Stashed changes
+
   return (
     <ImageBackground
       resizeMode="stretch"
