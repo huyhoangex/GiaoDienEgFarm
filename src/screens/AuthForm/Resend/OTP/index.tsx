@@ -16,7 +16,7 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
 import {useNavigation} from '@react-navigation/native';
 
-export default function index() {
+export default function Index() {
   const navigation = useNavigation() as any;
   const input = useRef<OTPTextView>(null);
   const handleCellTextChange = async (text: any, i: any) => {

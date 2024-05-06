@@ -55,6 +55,12 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     color: 'black',
   },
-
+  textselect: {
+    fontSize: 15,
+    lineHeight: 19,
+    color: colors.white,
+    top: 23,
+    left:29,
+  },
 });
 export default styles;
