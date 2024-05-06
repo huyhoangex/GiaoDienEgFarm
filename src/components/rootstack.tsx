@@ -1,11 +1,12 @@
-import LayOut1 from '../components/GetStarted/layout1';
-import LayOut2 from '../components/GetStarted/layout2';
-import LayOut3 from '../components/GetStarted/layout3';
-import LayOut4 from '../components/GetStarted/layout4';
-import LogIn from '../components/AuthForm/LogIn';
-import Register from '../components/AuthForm/Register';
-import Resend from '../components/AuthForm/Resend';
-import moduleName from '../assets/img/background';
+import LayOut1 from '../screens/GetStarted/layout1';
+import LayOut2 from '../screens/GetStarted/layout2';
+import LayOut3 from '../screens/GetStarted/layout3';
+import LayOut4 from '../screens/GetStarted/layout4';
+import LogIn from '../screens/AuthForm/LogIn';
+import Register from '../screens/AuthForm/Register';
+import ResendOTP from '../screens/AuthForm/Resend/OTP';
+import ResendKYC from '../screens/AuthForm/Resend/KYC';
+
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LinearGradient from 'react-native-linear-gradient';
@@ -28,10 +29,8 @@ export default function RootStack() {
 
       <Stack.Screen name="Login" component={LogIn} />
       <Stack.Screen name="Register" component={Register} /> */}
-      <Stack.Screen
-        name="Resend"
-        component={Resend}
-      />
+      <Stack.Screen name="ResendOTP" component={ResendOTP} />
+      <Stack.Screen name="ResendKYC" component={ResendKYC} />
     </Stack.Navigator>
     // <LogIn></LogIn>
   );

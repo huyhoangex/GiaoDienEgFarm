@@ -3,18 +3,16 @@ import {
   Text,
   Image,
   TouchableOpacity,
-  Button,
   ImageBackground,
 } from 'react-native';
 import React from 'react';
 
-import TextGradient from '../../../assets/TextGradient';
 import styles from '../styleLayout234';
 import LinearGradient from 'react-native-linear-gradient';
 import styleBG from '../styleLayout234';
 import {useNavigation} from '@react-navigation/native';
 export default function layout4() {
-  const navigation = useNavigation();
+  const navigation = useNavigation() as any;
   return (
     <ImageBackground
       resizeMode="stretch"
