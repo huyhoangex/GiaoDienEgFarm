@@ -15,6 +15,7 @@ import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
 import {useNavigation} from '@react-navigation/native';
+import Title from '../../../../components/Title';
 
 export default function Index() {
   const navigation = useNavigation() as any;
@@ -34,11 +35,11 @@ export default function Index() {
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* thanh tiêu đề */}
-        <View style={styles.title}>
+        {/* <View style={styles.title}>
           <TouchableOpacity
             style={styles.goback}
             activeOpacity={0.3}
-            onPress={() => navigation.navigate('Layout2')}>
+            onPress={() => navigation.goback()}>
             <Image
               style={{width: 8, height: 13}}
               source={require('../../../../assets/img/back.png')}></Image>
@@ -46,7 +47,8 @@ export default function Index() {
           <Text style={[styles.texttitle, styles.font]}>
             Enter the OTP code
           </Text>
-        </View>
+        </View> */}
+        <Title text="Enter the OTP code"></Title>
         {/* nội dung */}
         <View style={styles.content}>
           {/* CountdownCircleTimer */}

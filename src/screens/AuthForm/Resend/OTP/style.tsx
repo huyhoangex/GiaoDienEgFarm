@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     fontFamily: 'IBMPlexSans-Bold',
     fontWeight: '700',
   },
+  // thanh tiêu đề
   title: {
     borderColor: 'rgba(255,255,255,0.5)',
     borderBottomWidth: 1,
