@@ -81,6 +81,8 @@ export default function Index() {
               </LinearGradient>
             </TouchableOpacity>
           </View>
+
+
         </View>
         {/* bottom */}
         <Image
