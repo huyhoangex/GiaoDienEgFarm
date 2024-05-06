@@ -30,7 +30,7 @@ export default function RootStack() {
       <Stack.Screen name="Login" component={LogIn} />
       <Stack.Screen name="Register" component={Register} />
       <Stack.Screen name="ResendOTP" component={ResendOTP} />
-       {/* <Stack.Screen name="ResendKYC" component={ResendKYC} /> */}
+      <Stack.Screen name="ResendKYC" component={ResendKYC} />
     </Stack.Navigator>
     // <LogIn></LogIn>
   );
