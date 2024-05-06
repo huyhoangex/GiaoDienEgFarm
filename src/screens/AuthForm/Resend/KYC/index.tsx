@@ -15,7 +15,7 @@ import {
   import Clipboard from '@react-native-clipboard/clipboard';
   import InputOTP from '../../../../components/InputOTP';
   import { useNavigation } from '@react-navigation/native';
-  
+import SelectDropdown from '../../../../components/SelectDropdown';
   
   
   export default function Index() {
@@ -45,32 +45,31 @@ import {
                 style={{width: 8, height: 13}}
                 source={require('../../../../assets/img/back.png')}></Image>
             </TouchableOpacity>
-            <Text style={[styles.texttitle, styles.font]}>
-              KYC
-            </Text>
+            <Text style={[styles.texttitle, styles.font]}>KYC</Text>
           </View>
           <View>
             <View>
-              <Text style={[styles.textselect, styles.font]}>Select your ID type</Text>
+              <Text style={[styles.textselect, styles.font]}>
+                Select your ID type
+              </Text>
+              <SelectDropdown />
             </View>
-          
             {/* button */}
             <TouchableOpacity
-                style={styles.button}
-                activeOpacity={0.3}
-                onPress={() => navigation.navigate('Layout2')}>
-                <LinearGradient
+              style={styles.button}
+              activeOpacity={0.3}
+              onPress={() => navigation.navigate('Layout2')}>
+              <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}
                 start={{x: 1, y: 0}}
                 end={{x: 0, y: 1}}
                 style={styles.gradient}>
                 <Text style={[styles.resend, styles.font]}>RESEND</Text>
-                </LinearGradient>
+              </LinearGradient>
             </TouchableOpacity>
           </View>
-        </View>            
-
+        </View>
       </ImageBackground>
     );
   }

@@ -22,14 +22,14 @@ export default function RootStack() {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Layout1" component={LayOut1} />
+      {/* <Stack.Screen name="Layout1" component={LayOut1} />
       <Stack.Screen name="Layout2" component={LayOut2} />
       <Stack.Screen name="Layout3" component={LayOut3} />
       <Stack.Screen name="Layout4" component={LayOut4} />
 
       <Stack.Screen name="Login" component={LogIn} />
       <Stack.Screen name="Register" component={Register} />
-      <Stack.Screen name="ResendOTP" component={ResendOTP} />
+      <Stack.Screen name="ResendOTP" component={ResendOTP} /> */}
       <Stack.Screen name="ResendKYC" component={ResendKYC} />
     </Stack.Navigator>
     // <LogIn></LogIn>
