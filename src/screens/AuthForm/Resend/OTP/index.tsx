@@ -92,7 +92,7 @@ export default function index() {
         {/* bottom */}
         <Image
           style={styles.bottomIMG}
-          source={require('../../../assets/img/bottom.png')}
+          source={require('../../../../assets/img/bottom.png')}
         />
       </View>
     </ImageBackground>

@@ -11,7 +11,7 @@ import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 
-export default function index() {
+export default function Login() {
   const navigation = useNavigation() as any;
   const [getPasswordVisible, setPasswordVisible] = useState(false);
 

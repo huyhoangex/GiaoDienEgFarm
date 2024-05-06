@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flex: 2,
-    justifyContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   contentContainer: {
     flex: 1,
@@ -23,6 +24,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     justifyContent: 'center',
+    alignItems: 'center',
     flex: 1,
   },
   title: {

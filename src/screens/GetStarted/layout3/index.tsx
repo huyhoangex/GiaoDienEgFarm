@@ -12,7 +12,7 @@ import styleBG from '../styleLayout234';
 import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
 
-export default function layout3() {
+export default function Layout3() {
   const navigation = useNavigation() as any;
   return (
     <ImageBackground

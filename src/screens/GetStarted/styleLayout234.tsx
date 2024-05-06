@@ -22,13 +22,16 @@ const styles = StyleSheet.create({
   imgContainer: {
     flex: 2,
     alignItems: 'center',
+    justifyContent: 'center'
   },
   contentContainer: {
     flex: 1,
     justifyContent: 'center',
+
   },
   buttonContainer: {
     justifyContent: 'center',
+    alignItems: 'center',
     flex: 1,
   },
   textTitle: {
