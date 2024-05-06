@@ -41,7 +41,7 @@ import {
             <TouchableOpacity
               style={styles.goback}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('Layout2')}>
+              onPress={() => navigation.goback()}>
               <Image
                 style={{width: 8, height: 13}}
                 source={require('../../../../assets/img/back.png')}></Image>
@@ -54,6 +54,7 @@ import {
                 Select your ID type
               </Text>
               <View style={{flex: 1}}>
+                
               </View>
             </View>
             {/* button */}
