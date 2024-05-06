@@ -15,7 +15,6 @@ import {
   import Clipboard from '@react-native-clipboard/clipboard';
   import InputOTP from '../../../../components/InputOTP';
   import { useNavigation } from '@react-navigation/native';
-  import {Picker} from '@react-native-picker/picker';
   
   
   export default function Index() {
