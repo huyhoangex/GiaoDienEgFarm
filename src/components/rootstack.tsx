@@ -4,8 +4,8 @@ import LayOut3 from '../screens/GetStarted/Layout3';
 import LayOut4 from '../screens/GetStarted/Layout4';
 import LogIn from '../screens/AuthForm/LogIn';
 import Register from '../screens/AuthForm/Register';
-import ResendOTP from '../screens/AuthForm/Resend/OTP/Index';
-import ResendKYC from '../screens/AuthForm/Resend/KYC/Index';
+import ResendOTP from '../screens/AuthForm/Resend/OTP';
+import ResendKYC from '../screens/AuthForm/Resend/KYC';
 
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -30,7 +30,7 @@ export default function RootStack() {
       <Stack.Screen name="Login" component={LogIn} />
       <Stack.Screen name="Register" component={Register} />
       <Stack.Screen name="ResendOTP" component={ResendOTP} />
-       <Stack.Screen name="ResendKYC" component={ResendKYC} />
+       {/* <Stack.Screen name="ResendKYC" component={ResendKYC} /> */}
     </Stack.Navigator>
     // <LogIn></LogIn>
   );
