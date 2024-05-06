@@ -16,7 +16,7 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
 import {useNavigation} from '@react-navigation/native';
 
-export default function index() {
+export default function Index() {
   const navigation = useNavigation() as any;
   const input = useRef<OTPTextView>(null);
   const handleCellTextChange = async (text: any, i: any) => {
@@ -41,7 +41,7 @@ export default function index() {
             onPress={() => navigation.navigate('Layout2')}>
             <Image
               style={{width: 8, height: 13}}
-              source={require('../../../../../assets/img/back.png')}></Image>
+              source={require('../../../../assets/img/back.png')}></Image>
           </TouchableOpacity>
           <Text style={[styles.texttitle, styles.font]}>
             Enter the OTP code

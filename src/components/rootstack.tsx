@@ -4,8 +4,8 @@ import LayOut3 from '../screens/GetStarted/Layout3';
 import LayOut4 from '../screens/GetStarted/Layout4';
 import LogIn from '../screens/AuthForm/LogIn';
 import Register from '../screens/AuthForm/Register';
-import ResendOTP from '../screens/AuthForm/Resend/OTP';
-import ResendKYC from '../screens/AuthForm/Resend/KYC';
+import ResendOTP from '../screens/AuthForm/Resend/OTP/Index';
+import ResendKYC from '../screens/AuthForm/Resend/KYC/Index';
 
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';

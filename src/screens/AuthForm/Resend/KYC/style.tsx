@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   title: {
-    borderColor: 'black',
+    borderColor: 'rgba(255,255,255,0.5)',
     borderBottomWidth: 1,
     flexDirection: 'row',
     padding: '3%',
@@ -34,12 +34,6 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
   },
-  //countdown circle timer
-  countdowncircletimer: {
-    alignItems: 'center',
-    marginTop: '30%',
-  },
-
   //button
   button: {
     height: 50,
@@ -60,6 +54,13 @@ const styles = StyleSheet.create({
     fontSize: 20,
     lineHeight: 23,
     color: 'black',
+  },
+  textselect: {
+    fontSize: 15,
+    lineHeight: 19,
+    color: colors.white,
+    top: 23,
+    left:29,
   },
 });
 export default styles;

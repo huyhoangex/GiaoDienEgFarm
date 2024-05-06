@@ -18,7 +18,7 @@ import {
   
   
   
-  export default function index() {
+  export default function Index() {
      const navigation = useNavigation() as any;
     const input = useRef<OTPTextView>(null);
     const handleCellTextChange = async (text: any, i: any) => {
@@ -49,10 +49,11 @@ import {
               KYC
             </Text>
           </View>
-
+          <View>
             <View>
-
-            
+              <Text style={[styles.textselect, styles.font]}>Select your ID type</Text>
+            </View>
+          
             {/* button */}
             <TouchableOpacity
                 style={styles.button}
@@ -67,7 +68,7 @@ import {
                 <Text style={[styles.resend, styles.font]}>RESEND</Text>
                 </LinearGradient>
             </TouchableOpacity>
-            </View>
+          </View>
         </View>            
 
       </ImageBackground>
