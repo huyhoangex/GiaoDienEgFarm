@@ -21,7 +21,7 @@ import { useNavigation } from '@react-navigation/native';
 export default function index() {
    const navigation = useNavigation() as any;
   const input = useRef<OTPTextView>(null);
-  const handleCellTextChange = async (text, i) => {
+  const handleCellTextChange = async (text: any, i: any) => {
     if (i === 0) {
       const clippedText = await Clipboard.getString();
       if (clippedText.slice(0, 1) === text) {
