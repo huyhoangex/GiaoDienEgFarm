@@ -14,10 +14,14 @@ import TextGradient from '../../../../components/TextGradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
+import { useNavigation } from '@react-navigation/native';
+
+
 
 export default function index() {
+   const navigation = useNavigation() as any;
   const input = useRef<OTPTextView>(null);
-  const handleCellTextChange = async (text: string, i: number) => {
+  const handleCellTextChange = async (text, i) => {
     if (i === 0) {
       const clippedText = await Clipboard.getString();
       if (clippedText.slice(0, 1) === text) {

@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
-import TextGradient from '../../../assets/TextGradient';
+import TextGradient from '../../../components/TextGradient';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import styleBG from '../styleLayout234';

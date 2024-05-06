@@ -12,7 +12,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 
 export default function index() {
-  const navigation = useNavigation();
+  const navigation = useNavigation() as any;
   
   return (
     <ImageBackground

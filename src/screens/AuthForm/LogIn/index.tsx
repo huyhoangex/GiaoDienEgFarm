@@ -12,7 +12,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 
 export default function index() {
-  const navigation = useNavigation();
+  const navigation = useNavigation() as any;
   const [getPasswordVisible, setPasswordVisible] = useState(false);
 
   return (
@@ -89,7 +89,7 @@ export default function index() {
             <TouchableOpacity
               style={{height: 16}}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('Register')}>
+              onPress={() => navigation.navigate('Register' as any)}>
               <Text style={{color: 'rgba(0, 251, 145, 1)'}}>REGISTER</Text>
             </TouchableOpacity>
           </Text>
