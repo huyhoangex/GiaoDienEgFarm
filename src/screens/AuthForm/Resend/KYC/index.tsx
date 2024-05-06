@@ -15,11 +15,12 @@ import {
   import Clipboard from '@react-native-clipboard/clipboard';
   import InputOTP from '../../../../components/InputOTP';
   import { useNavigation } from '@react-navigation/native';
-import SelectDropdown from '../../../../components/SelectDropdown';
+  import {Picker} from '@react-native-picker/picker';
   
   
   export default function Index() {
-     const navigation = useNavigation() as any;
+    const [selectedLanguage, setSelectedLanguage] = useState();
+    const navigation = useNavigation() as any;
     const input = useRef<OTPTextView>(null);
     const handleCellTextChange = async (text: any, i: any) => {
       if (i === 0) {
@@ -52,7 +53,8 @@ import SelectDropdown from '../../../../components/SelectDropdown';
               <Text style={[styles.textselect, styles.font]}>
                 Select your ID type
               </Text>
-              <SelectDropdown />
+              <View style={{flex: 1}}>
+              </View>
             </View>
             {/* button */}
             <TouchableOpacity
