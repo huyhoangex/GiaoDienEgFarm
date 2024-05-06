@@ -10,10 +10,10 @@ import React, {useRef, useState} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';
-import TextGradient from '../../../components/TextGradient';
+import TextGradient from '../../../../components/TextGradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
-import InputOTP from '../../../components/InputOTP';
+import InputOTP from '../../../../components/InputOTP';
 
 export default function index() {
   const input = useRef<OTPTextView>(null);
