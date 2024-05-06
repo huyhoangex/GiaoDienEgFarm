@@ -38,19 +38,24 @@ const styles = StyleSheet.create({
   countdowncircletimer: {
     alignItems: 'center',
     marginTop: '30%',
+    marginBottom: '10%',
   },
   time: {
     color: '#00FB91',
     fontSize: 48,
   },
+  //OTP
+  inputOTP: {},
   //button
+  containerButon: {
+    alignItems: 'center',
+  },
   button: {
     height: 50,
-    width: 192,
+    width: 277,
     marginHorizontal: 'auto',
     borderRadius: 23.5,
-    marginTop: 15,
-    marginBottom: 26,
+    marginTop: '10%',
   },
   gradient: {
     justifyContent: 'center',

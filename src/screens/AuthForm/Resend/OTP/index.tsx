@@ -72,22 +72,24 @@ export default function Index() {
             </CountdownCircleTimer>
           </View>
           {/* OTP input */}
-          <InputOTP />
+          <InputOTP style={styles.inputOTP} />
 
           {/* button */}
-          <TouchableOpacity
-            style={styles.button}
-            activeOpacity={0.3}
-            onPress={() => navigation.navigate('')}>
-            <LinearGradient
-              locations={[0, 1]}
-              colors={['#2AFCFF', '#00FB91']}
-              start={{x: 1, y: 0}}
-              end={{x: 0, y: 1}}
-              style={styles.gradient}>
-              <Text style={[styles.resend, styles.font]}>RESEND</Text>
-            </LinearGradient>
-          </TouchableOpacity>
+          <View style={styles.containerButon}>
+            <TouchableOpacity
+              style={styles.button}
+              activeOpacity={0.3}
+              onPress={() => navigation.navigate('')}>
+              <LinearGradient
+                locations={[0, 1]}
+                colors={['#2AFCFF', '#00FB91']}
+                start={{x: 1, y: 0}}
+                end={{x: 0, y: 1}}
+                style={styles.gradient}>
+                <Text style={[styles.resend, styles.font]}>RESEND</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          </View>
         </View>
         {/* bottom */}
         <Image
