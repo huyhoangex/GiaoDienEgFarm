@@ -15,6 +15,7 @@ import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
 import {useNavigation} from '@react-navigation/native';
+import Title from '../../../../components/Title';
 
 export default function Index() {
   const navigation = useNavigation() as any;
@@ -34,19 +35,8 @@ export default function Index() {
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* thanh tiêu đề */}
-        <View style={styles.title}>
-          <TouchableOpacity
-            style={styles.goback}
-            activeOpacity={0.3}
-            onPress={() => navigation.goback()}>
-            <Image
-              style={{width: 8, height: 13}}
-              source={require('../../../../assets/img/back.png')}></Image>
-          </TouchableOpacity>
-          <Text style={[styles.texttitle, styles.font]}>
-            Enter the OTP code
-          </Text>
-        </View>
+        <Title text="Enter the OTP code"></Title>
+
         {/* nội dung */}
         <View style={styles.content}>
           {/* CountdownCircleTimer */}
@@ -71,23 +61,28 @@ export default function Index() {
               )}
             </CountdownCircleTimer>
           </View>
+          
           {/* OTP input */}
-          <InputOTP />
+          <InputOTP style={styles.inputOTP} />
 
           {/* button */}
-          <TouchableOpacity
-            style={styles.button}
-            activeOpacity={0.3}
-            onPress={() => navigation.navigate('ResendKYC')}>
-            <LinearGradient
-              locations={[0, 1]}
-              colors={['#2AFCFF', '#00FB91']}
-              start={{x: 1, y: 0}}
-              end={{x: 0, y: 1}}
-              style={styles.gradient}>
-              <Text style={[styles.resend, styles.font]}>RESEND</Text>
-            </LinearGradient>
-          </TouchableOpacity>
+          <View style={styles.containerButon}>
+            <TouchableOpacity
+              style={styles.button}
+              activeOpacity={0.3}
+              onPress={() => navigation.navigate('')}>
+              <LinearGradient
+                locations={[0, 1]}
+                colors={['#2AFCFF', '#00FB91']}
+                start={{x: 1, y: 0}}
+                end={{x: 0, y: 1}}
+                style={styles.gradient}>
+                <Text style={[styles.resend, styles.font]}>RESEND</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          </View>
+
+
         </View>
         {/* bottom */}
         <Image

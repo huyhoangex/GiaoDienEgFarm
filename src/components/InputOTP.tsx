@@ -20,7 +20,6 @@ export default function InputOTP({style}: {style: ViewStyle}) {
   return (
     <OTPTextView
       ref={input}
-      // textInputStyle={[styles.input, style]}
       textInputStyle={styles.roundedTextInput}
       handleCellTextChange={handleCellTextChange}
       containerStyle={styles.containInput}
@@ -32,15 +31,8 @@ export default function InputOTP({style}: {style: ViewStyle}) {
 
 const styles = StyleSheet.create({
   containInput: {
-    columnGap: 16,
-  },
-  contentBelow: {
-    flexDirection: 'row',
-    columnGap: 6,
-    width: '90%',
-    marginTop: 4,
-    marginLeft: 6,
-    alignItems: 'flex-start',
+    justifyContent: 'space-evenly',
+    paddingHorizontal: 80,
   },
   roundedTextInput: {
     borderRadius: 5,
@@ -48,6 +40,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     color: '#01FB91',
     backgroundColor: '#fff',
-    height: '100%',
+    height: 50,
+    width: 35,
   },
 });
