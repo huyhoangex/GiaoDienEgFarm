@@ -21,7 +21,7 @@ import {
   export default function index() {
      const navigation = useNavigation() as any;
     const input = useRef<OTPTextView>(null);
-    const handleCellTextChange = async (text, i) => {
+    const handleCellTextChange = async (text: any, i: any) => {
       if (i === 0) {
         const clippedText = await Clipboard.getString();
         if (clippedText.slice(0, 1) === text) {
@@ -32,7 +32,7 @@ import {
     return (
       <ImageBackground
         resizeMode="stretch"
-        source={require('../../../assets/img/background.png')}
+        source={require('../../../../assets/img/background.png')}
         style={styles.imageBG}>
         <View style={{flex: 1, top: '8%'}}>
           {/* thanh tiêu đề */}
@@ -43,7 +43,7 @@ import {
               onPress={() => navigation.navigate('Layout2')}>
               <Image
                 style={{width: 8, height: 13}}
-                source={require('../../../assets/img/back.png')}></Image>
+                source={require('../../../../assets/img/back.png')}></Image>
             </TouchableOpacity>
             <Text style={[styles.texttitle, styles.font]}>
               KYC

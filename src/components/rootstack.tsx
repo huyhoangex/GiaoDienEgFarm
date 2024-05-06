@@ -18,7 +18,7 @@ const Stack = createNativeStackNavigator();
 export default function RootStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Login"
+      initialRouteName="ResendKYC"
       screenOptions={{
         headerShown: false,
       }}>

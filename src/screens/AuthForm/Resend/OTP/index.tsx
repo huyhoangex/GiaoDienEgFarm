@@ -14,12 +14,10 @@ import TextGradient from '../../../../components/TextGradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
-import { useNavigation } from '@react-navigation/native';
-
-
+import {useNavigation} from '@react-navigation/native';
 
 export default function index() {
-   const navigation = useNavigation() as any;
+  const navigation = useNavigation() as any;
   const input = useRef<OTPTextView>(null);
   const handleCellTextChange = async (text: any, i: any) => {
     if (i === 0) {
@@ -32,7 +30,7 @@ export default function index() {
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../../assets/img/background.png')}
+      source={require('../../../../assets/img/background.png')}
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* thanh tiêu đề */}
@@ -43,7 +41,7 @@ export default function index() {
             onPress={() => navigation.navigate('Layout2')}>
             <Image
               style={{width: 8, height: 13}}
-              source={require('../../../assets/img/back.png')}></Image>
+              source={require('../../../../../assets/img/back.png')}></Image>
           </TouchableOpacity>
           <Text style={[styles.texttitle, styles.font]}>
             Enter the OTP code
