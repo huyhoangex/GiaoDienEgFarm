@@ -41,7 +41,7 @@ export default function index() {
             onPress={() => navigation.navigate('Layout2')}>
             <Image
               style={{width: 8, height: 13}}
-              source={require('../../../../../assets/img/back.png')}></Image>
+              source={require('../../../../assets/img/back.png')}></Image>
           </TouchableOpacity>
           <Text style={[styles.texttitle, styles.font]}>
             Enter the OTP code

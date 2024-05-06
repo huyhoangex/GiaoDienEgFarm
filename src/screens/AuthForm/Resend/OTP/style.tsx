@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   title: {
-    borderColor: 'black',
+    borderColor: 'rgba(255,255,255,0.5)',
     borderBottomWidth: 1,
     flexDirection: 'row',
     padding: '3%',
