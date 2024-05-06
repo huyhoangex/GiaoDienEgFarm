@@ -59,14 +59,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 19,
     color: colors.white,
-    // top: 23,
-    // left:29,
-    marginTop: 23,
-    marginLeft: 29,
-  },
-  selectid: {
-    width: 200,
-    height: 200,
+    top: 23,
+    left:29,
   },
 });
 export default styles;
