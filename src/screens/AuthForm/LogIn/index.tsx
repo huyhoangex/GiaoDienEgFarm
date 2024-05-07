@@ -10,6 +10,8 @@ import React, {useState} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
+import {images} from '../../../assets/theme/images';
+
 
 export default function Login() {
   const navigation = useNavigation() as any;
@@ -18,14 +20,14 @@ export default function Login() {
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../../assets/img/background.png')}
+      source={images.backGround}
       style={styles.imageBG}>
       <View style={{flex: 1}}>
         {/* logo */}
         <View style={styles.logoContainer}>
           <Image
             style={styles.logo}
-            source={require('../../../assets/img/logoblockchain.png')}
+            source={images.logoBlockChain}
           />
         </View>
         {/* input */}
@@ -62,9 +64,9 @@ export default function Login() {
                 setPasswordVisible(!getPasswordVisible);
               }}>
               {getPasswordVisible ? (
-                <Image source={require('../../../assets/img/view.png')} />
+                <Image source={images.view} />
               ) : (
-                <Image source={require('../../../assets/img/hide.png')} />
+                <Image source={images.hide} />
               )}
             </TouchableOpacity>
           </LinearGradient>
@@ -73,7 +75,7 @@ export default function Login() {
           <TouchableOpacity
             style={styles.button}
             activeOpacity={0.3}
-            onPress={() => navigation.navigate('Layout2')}>
+            onPress={() => navigation.navigate('Home')}>
             <LinearGradient
               locations={[0, 1]}
               colors={['#2AFCFF', '#00FB91']}
@@ -98,7 +100,7 @@ export default function Login() {
         <View style={styles.bottomContainer}>
           <Image
             style={styles.bottomIMG}
-            source={require('../../../assets/img/bottom.png')}
+            source={images.bottom}
           />
         </View>
       </View>

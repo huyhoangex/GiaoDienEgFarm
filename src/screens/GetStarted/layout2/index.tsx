@@ -11,13 +11,14 @@ import styles from '../styleLayout234';
 import styleBG from '../styleLayout234';
 import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
+import {images} from '../../../assets/theme/images';
 
 export default function Layout2() {
   const navigation = useNavigation() as any;
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../../assets/img/background.png')}
+      source={images.backGround}
       style={styleBG.imageBG}>
       <View style={{flex: 1}}>
         {/* tieu de */}
@@ -29,7 +30,7 @@ export default function Layout2() {
         {/* hinh anh */}
         <View style={styles.imgContainer}>
           <Image
-            source={require('../../../assets/img/layout2.png')}
+            source={images.layOut2}
             style={styles.image}
           />
         </View>

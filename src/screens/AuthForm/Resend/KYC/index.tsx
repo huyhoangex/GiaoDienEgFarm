@@ -10,16 +10,14 @@ import {
 import React, {useEffect, useRef, useState} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
-import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';
-import TextGradient from '../../../../components/TextGradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
-import InputOTP from '../../../../components/InputOTP';
 import {useNavigation} from '@react-navigation/native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import colors from '../../../../components/color';
 import { images } from '../../../../assets/theme/images';
 import { Camera, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
+import Title from '../../../../components/Title';
 
 export default function Index() {
   const device = useCameraDevice('back');
@@ -48,12 +46,13 @@ export default function Index() {
       const clippedText = await Clipboard.getString();
       if (clippedText.slice(0, 1) === text) {
         input.current?.setValue(clippedText, true);
-      }}}
-    if (device == null) return <ActivityIndicator />;
+      }
+    }
+  };
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../../../assets/img/background.png')}
+      source={images.backGround}
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* title */}
@@ -148,19 +147,19 @@ export default function Index() {
           {/* proviso */}
           <View>
             {/* one */}
-            <View
-              style={styles.frameproviso}>
+            <View style={styles.frameproviso}>
               <Image style={styles.iconproviso} source={images.iconyes} />
               <Text style={styles.textproviso}>
-                Upload a colourful full-size (4 sides visible) photo of the{'\n'}document.
+                Upload a colourful full-size (4 sides visible) photo of the
+                {'\n'}document.
               </Text>
             </View>
             {/* two */}
-            <View
-              style={styles.frameproviso}>
+            <View style={styles.frameproviso}>
               <Image style={styles.iconproviso} source={images.iconno} />
               <Text style={styles.textproviso}>
-                Do not upload selfies, screenshort and do not modify{'\n'}the images in graphic editors.
+                Do not upload selfies, screenshort and do not modify{'\n'}the
+                images in graphic editors.
               </Text>
             </View>
           </View>
@@ -169,7 +168,7 @@ export default function Index() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('ResendKYC')}>
+              onPress={() => navigation.navigate('Login')}>
               <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}
@@ -182,7 +181,7 @@ export default function Index() {
           </View>
         </View>
         {/* bottom */}
-        </View>
+      </View>
     </ImageBackground>
   );
 }
