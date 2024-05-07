@@ -18,7 +18,6 @@ import {useNavigation} from '@react-navigation/native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import colors from '../../../../components/color';
 import { images } from '../../../../assets/theme/images';
-// import {Dropdown} from 'react-native-material-dropdown';
 
 export default function Index() {
   const [open, setOpen] = useState(false);
@@ -36,9 +35,6 @@ export default function Index() {
       const clippedText = await Clipboard.getString();
       if (clippedText.slice(0, 1) === text) {
         input.current?.setValue(clippedText, true);
-      }
-    }
-  };
   return (
     <ImageBackground
       resizeMode="stretch"

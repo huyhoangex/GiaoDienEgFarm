@@ -13,6 +13,7 @@ import {useNavigation} from '@react-navigation/native';
 
 export default function Register() {
   const navigation = useNavigation() as any;
+
   return (
     <ImageBackground
       resizeMode="stretch"
