@@ -9,13 +9,10 @@ import {
   import React, {useRef, useState} from 'react';
   import styles from './style';
   import LinearGradient from 'react-native-linear-gradient';
-  import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';
-  import TextGradient from '../../../../components/TextGradient';
   import OTPTextView from 'react-native-otp-textinput';
   import Clipboard from '@react-native-clipboard/clipboard';
-  import InputOTP from '../../../../components/InputOTP';
   import { useNavigation } from '@react-navigation/native';
-  import DropDownPicker from 'react-native-dropdown-picker';  
+  import DropDownPicker from 'react-native-dropdown-picker';
   
   export default function Index() {
     const [open, setOpen] = useState(false);
