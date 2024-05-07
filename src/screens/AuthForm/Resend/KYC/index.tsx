@@ -35,6 +35,7 @@ export default function Index() {
       const clippedText = await Clipboard.getString();
       if (clippedText.slice(0, 1) === text) {
         input.current?.setValue(clippedText, true);
+      }}}
   return (
     <ImageBackground
       resizeMode="stretch"
