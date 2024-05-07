@@ -35,7 +35,19 @@ export default function Index() {
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* thanh tiêu đề */}
-        <Title text="Enter the OTP code"></Title>
+        <View style={styles.title}>
+          <TouchableOpacity
+            style={styles.goback}
+            activeOpacity={0.3}
+            onPress={() => navigation.goBack()}>
+            <Image
+              style={{width: 8, height: 13}}
+              source={require('../../../../assets/img/back.png')}></Image>
+          </TouchableOpacity>
+          <Text style={[styles.texttitle, styles.font]}>
+            Enter the OTP code
+          </Text>
+        </View>
 
         {/* nội dung */}
         <View style={styles.content}>
@@ -61,7 +73,7 @@ export default function Index() {
               )}
             </CountdownCircleTimer>
           </View>
-          
+
           {/* OTP input */}
           <InputOTP style={styles.inputOTP} />
 
@@ -70,7 +82,7 @@ export default function Index() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('')}>
+              onPress={() => navigation.navigate('ResendKYC')}>
               <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}
