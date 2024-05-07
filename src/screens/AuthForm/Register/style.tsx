@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     top: '2%',
-    marginBottom: '1%'
+    marginBottom: '1%',
   },
   logo: {},
   // form
@@ -85,8 +85,11 @@ const styles = StyleSheet.create({
   bottomContainer: {
     flex: 1,
     alignItems: 'center',
-    top: 50,
+    top: '10%',
   },
-  bottomIMG: {},
+  bottomIMG: {
+    width: '40%',
+    height: '40%',
+  },
 });
 export default styles;

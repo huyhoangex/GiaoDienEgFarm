@@ -10,6 +10,8 @@ import React, {useState} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
+import {images} from '../../../assets/theme/images';
+
 
 export default function Register() {
   const navigation = useNavigation() as any;
@@ -17,14 +19,14 @@ export default function Register() {
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../../assets/img/background.png')}
+      source={images.backGround}
       style={styles.imageBG}>
       <View style={{flex: 1}}>
         {/* logo */}
         <View style={styles.logoContainer}>
           <Image
             style={styles.logo}
-            source={require('../../../assets/img/logoblockchain.png')}
+            source={images.logoBlockChain}
           />
         </View>
         {/* input */}
@@ -128,7 +130,7 @@ export default function Register() {
         <View style={styles.bottomContainer}>
           <Image
             style={styles.bottomIMG}
-            source={require('../../../assets/img/bottom.png')}
+            source={images.bottom}
           />
         </View>
       </View>

@@ -16,6 +16,8 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import InputOTP from '../../../../components/InputOTP';
 import {useNavigation} from '@react-navigation/native';
 import Title from '../../../../components/Title';
+import {images} from '../../../../assets/theme/images';
+
 
 export default function Index() {
   const navigation = useNavigation() as any;
@@ -31,7 +33,7 @@ export default function Index() {
   return (
     <ImageBackground
       resizeMode="stretch"
-      source={require('../../../../assets/img/background.png')}
+      source={images.backGround}
       style={styles.imageBG}>
       <View style={{flex: 1, top: '8%'}}>
         {/* thanh tiêu đề */}
@@ -42,7 +44,7 @@ export default function Index() {
             onPress={() => navigation.goBack()}>
             <Image
               style={{width: 8, height: 13}}
-              source={require('../../../../assets/img/back.png')}></Image>
+              source={images.iconBack}></Image>
           </TouchableOpacity>
           <Text style={[styles.texttitle, styles.font]}>
             Enter the OTP code
@@ -97,7 +99,7 @@ export default function Index() {
         {/* bottom */}
         <Image
           style={styles.bottomIMG}
-          source={require('../../../../assets/img/bottom.png')}
+          source={images.bottom}
         />
       </View>
     </ImageBackground>

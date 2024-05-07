@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import colors from './color';
+import {images} from '../assets/theme/images';
 
 interface TitleProps {
     text: string;
@@ -18,7 +19,7 @@ const Title: React.FC<TitleProps> = ({
         onPress={() => navigation.goback()}>
         <Image
           style={{width: 8, height: 13}}
-          source={require('../assets/img/back.png')}></Image>
+          source={images.iconBack}></Image>
       </TouchableOpacity>
       <Text style={[styles.texttitle, styles.font]}>{text}</Text>
     </View>
