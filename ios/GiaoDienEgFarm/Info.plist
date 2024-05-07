@@ -49,7 +49,29 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SonsieOne-Regular.ttf</string>
+		<string>IBMPlexSans-Bold.ttf</string>
+		<string>IBMPlexSans-BoldItalic.ttf</string>
+		<string>IBMPlexSans-ExtraLight.ttf</string>
+		<string>IBMPlexSans-ExtraLightItalic.ttf</string>
+		<string>IBMPlexSans-Italic.ttf</string>
+		<string>IBMPlexSans-Light.ttf</string>
+		<string>IBMPlexSans-LightItalic.ttf</string>
+		<string>IBMPlexSans-Medium.ttf</string>
+		<string>IBMPlexSans-MediumItalic.ttf</string>
+		<string>IBMPlexSans-Regular.ttf</string>
+		<string>IBMPlexSans-SemiBold.ttf</string>
+		<string>IBMPlexSans-SemiBoldItalic.ttf</string>
+		<string>IBMPlexSans-Thin.ttf</string>
+		<string>IBMPlexSans-ThinItalic.ttf</string>
+		<string>Inter-Black.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-ExtraBold.ttf</string>
+		<string>Inter-ExtraLight.ttf</string>
+		<string>Inter-Light.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
+		<string>Inter-Thin.ttf</string>
 		<string>Poppins-Black.ttf</string>
 		<string>Poppins-BlackItalic.ttf</string>
 		<string>Poppins-Bold.ttf</string>
@@ -68,20 +90,7 @@
 		<string>Poppins-SemiBoldItalic.ttf</string>
 		<string>Poppins-Thin.ttf</string>
 		<string>Poppins-ThinItalic.ttf</string>
-		<string>IBMPlexSans-Bold.ttf</string>
-		<string>IBMPlexSans-BoldItalic.ttf</string>
-		<string>IBMPlexSans-ExtraLight.ttf</string>
-		<string>IBMPlexSans-ExtraLightItalic.ttf</string>
-		<string>IBMPlexSans-Italic.ttf</string>
-		<string>IBMPlexSans-Light.ttf</string>
-		<string>IBMPlexSans-LightItalic.ttf</string>
-		<string>IBMPlexSans-Medium.ttf</string>
-		<string>IBMPlexSans-MediumItalic.ttf</string>
-		<string>IBMPlexSans-Regular.ttf</string>
-		<string>IBMPlexSans-SemiBold.ttf</string>
-		<string>IBMPlexSans-SemiBoldItalic.ttf</string>
-		<string>IBMPlexSans-Thin.ttf</string>
-		<string>IBMPlexSans-ThinItalic.ttf</string>
+		<string>SonsieOne-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
