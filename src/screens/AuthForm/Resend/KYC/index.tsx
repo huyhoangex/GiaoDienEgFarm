@@ -5,8 +5,9 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  ActivityIndicator,
 } from 'react-native';
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';
@@ -18,8 +19,20 @@ import {useNavigation} from '@react-navigation/native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import colors from '../../../../components/color';
 import { images } from '../../../../assets/theme/images';
+import { Camera, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
 
 export default function Index() {
+  const device = useCameraDevice('back');
+  const {hasPermission} = useCameraPermission();
+  useEffect(()=>{
+    checkPermission();
+  },[])
+  const checkPermission=async()=>{
+    const cameraPermission = Camera.getCameraPermissionStatus();
+    const microphonePermission = Camera.getMicrophonePermissionStatus();
+    console.log(cameraPermission);
+    
+  }
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const [items, setItems] = useState([
@@ -36,6 +49,7 @@ export default function Index() {
       if (clippedText.slice(0, 1) === text) {
         input.current?.setValue(clippedText, true);
       }}}
+    if (device == null) return <ActivityIndicator />;
   return (
     <ImageBackground
       resizeMode="stretch"
