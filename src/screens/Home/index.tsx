@@ -8,9 +8,11 @@ import {
 import React from 'react';
 import styles from './style';
 import {images} from '../../assets/theme/images';
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function Home() {
+   const navigation = useNavigation() as any;
   return (
     <ImageBackground
       resizeMode="stretch"
@@ -33,7 +35,7 @@ export default function Home() {
 
         {/* choice */}
         <View style={styles.containerRectangle}>
-          {/* item */}
+          {/* item 1 */}
           <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
             <Image
               style={{width: '85%', height: 100}}
@@ -43,8 +45,11 @@ export default function Home() {
             <Image style={styles.image} source={images.imgHome1}></Image>
           </TouchableOpacity>
 
-          {/* item */}
-          <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
+          {/* item 2 */}
+          <TouchableOpacity
+            onPress={() => navigation.navigate('ActivateStampsFirst')}
+            activeOpacity={0.7}
+            style={styles.rectangle}>
             <Image
               style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>
@@ -53,8 +58,11 @@ export default function Home() {
             <Image style={styles.image} source={images.imgHome2}></Image>
           </TouchableOpacity>
 
-          {/* item */}
-          <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
+          {/* item 3 */}
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Pileofpillows')}
+            activeOpacity={0.7}
+            style={styles.rectangle}>
             <Image
               style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>

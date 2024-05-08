@@ -103,7 +103,7 @@ export default function Index() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('Login')}>
+              onPress={() => navigation.navigate('ActivateStampsSecond')}>
               <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}

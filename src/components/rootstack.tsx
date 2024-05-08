@@ -15,9 +15,9 @@ import CameraKYC from '../screens/AuthForm/Resend/Camera';
 //Home
 import Manage from '../screens/Manage';
 import ActivateStampsFirst from '../screens/Home/ActivateStampsFirst';
+import ActivateStampsSecond from '../screens/Home/ActivateStampsSecond';
 import Pileofpillows from '../screens/Home/Pileofpillows';
 import Addproductionlog from '../screens/Home/Addproductionlog';
-
 
 const Stack = createNativeStackNavigator();
 
@@ -41,12 +41,11 @@ export default function RootStack() {
       <Stack.Screen name="ResendKYC" component={ResendKYC} />
       <Stack.Screen name="CameraKYC" component={CameraKYC} /> */}
       {/* Home */}
-      {/* <Stack.Screen name="Home" component={TabBottom} />
-      <Stack.Screen name="Manage" component={Manage} />
+      <Stack.Screen name="Home" component={TabBottom} />
       <Stack.Screen
         name="ActivateStampsFirst"
         component={ActivateStampsFirst}
-      /> */}
+      /> 
       {/* <Stack.Screen name="Pileofpillows" component={Pileofpillows} /> */}
       <Stack.Screen name="Addproductionlog" component={Addproductionlog} />
     </Stack.Navigator>
