@@ -1,4 +1,5 @@
 import React from 'react';
+import {Image, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import colors from '../components/color';
 import {images} from '../assets/theme/images';
@@ -7,8 +8,9 @@ import Home from '../screens/Home';
 import Manage from '../screens/Manage';
 import News from '../screens/News';
 import Information from '../screens/Information';
+import Pileofpillows from '../screens/Home/Pileofpillows';
 
-import {Image, View} from 'react-native';
+
 
 const Tab = createBottomTabNavigator();
 export default function TabBottom() {
@@ -17,7 +19,6 @@ export default function TabBottom() {
       screenOptions={({route}) => ({
         tabBarIcon: ({focused, color, size}) => {
           let iconSource, customSizeWidth;
-          
 
           if (route.name === 'Home') {
             iconSource = focused ? images.iconHome : images.iconHomeOutline;
@@ -32,14 +33,17 @@ export default function TabBottom() {
             iconSource = focused
               ? images.iconInformation
               : images.iconInformationOutline;
-              customSizeWidth = focused ? size + 28 : size + 28;
+            customSizeWidth = focused ? size + 28 : size + 28;
+          }else if (route.name === 'Pileofpillows') {
+            iconSource = focused ? images.iconHome : images.iconHomeOutline;
+            customSizeWidth = focused ? size : size;
           }
 
           return (
             <View style={{alignItems: 'center'}}>
               <Image
                 source={iconSource}
-                style={{width: customSizeWidth , height: size + 10}}
+                style={{width: customSizeWidth, height: size + 10}}
               />
             </View>
           );
@@ -62,6 +66,7 @@ export default function TabBottom() {
       <Tab.Screen name="Manage" component={Manage} />
       <Tab.Screen name="News" component={News} />
       <Tab.Screen name="Information" component={Information} />
+      <Tab.Screen name="Pileofpillows" component={Pileofpillows} />
     </Tab.Navigator>
   );
 }
