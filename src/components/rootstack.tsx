@@ -1,3 +1,6 @@
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import React from 'react';
+import TabBottom from './TabBottom';
 //GetStarted
 import LayOut1 from '../screens/GetStarted/Layout1';
 import LayOut2 from '../screens/GetStarted/Layout2';
@@ -12,10 +15,8 @@ import CameraKYC from '../screens/AuthForm/Resend/Camera';
 //Home
 import Manage from '../screens/Manage';
 import ActivateStampsFirst from '../screens/Home/ActivateStampsFirst';
+import Pileofpillows from '../screens/Home/Pileofpillows';
 
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import React from 'react';
-import TabBottom from './TabBottom';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ export default function RootStack() {
       {/* GetStarted */}
       {/* <Stack.Screen name="Layout1" component={LayOut1} />
       <Stack.Screen name="Layout2" component={LayOut2} />
+      {/* <Stack.Screen name="Layout2" component={LayOut2} />
       <Stack.Screen name="Layout3" component={LayOut3} />
       <Stack.Screen name="Layout4" component={LayOut4} /> */}
       {/* AuthForm */}
@@ -39,11 +41,12 @@ export default function RootStack() {
       <Stack.Screen name="CameraKYC" component={CameraKYC} /> */}
       {/* Home */}
       {/* <Stack.Screen name="Home" component={TabBottom} />
-      <Stack.Screen name="Manage" component={Manage} /> */}
+      <Stack.Screen name="Manage" component={Manage} />
       <Stack.Screen
         name="ActivateStampsFirst"
         component={ActivateStampsFirst}
-      />
+      /> */}
+      <Stack.Screen name="Pileofpillows" component={Pileofpillows} />
     </Stack.Navigator>
   );
 }

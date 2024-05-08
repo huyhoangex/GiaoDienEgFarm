@@ -36,7 +36,7 @@ export default function Home() {
           {/* item */}
           <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
             <Image
-              style={{width: '85%', height: '46%'}}
+              style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>
             <Text style={styles.textRectangle}>Add production log</Text>
             <Image style={styles.vector} source={images.vector}></Image>
@@ -46,9 +46,9 @@ export default function Home() {
           {/* item */}
           <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
             <Image
-              style={{width: '85%', height: '46%'}}
+              style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>
-            <Text style={styles.textRectangle}>Add production log</Text>
+            <Text style={styles.textRectangle}>Activate Stamps</Text>
             <Image style={styles.vector} source={images.vector}></Image>
             <Image style={styles.image} source={images.imgHome2}></Image>
           </TouchableOpacity>
@@ -56,13 +56,12 @@ export default function Home() {
           {/* item */}
           <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
             <Image
-              style={{width: '85%', height: '46%'}}
+              style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>
-            <Text style={styles.textRectangle}>Add production log</Text>
+            <Text style={styles.textRectangle}>Pile of pillows</Text>
             <Image style={styles.vector} source={images.vector}></Image>
             <Image style={styles.image} source={images.imgHome3}></Image>
           </TouchableOpacity>
-
         </View>
       </View>
     </ImageBackground>

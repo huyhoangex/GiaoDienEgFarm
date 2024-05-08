@@ -54,13 +54,11 @@ const styles = StyleSheet.create({
   //Rectangle
   containerRectangle: {
     flex: 1,
-    top: '10%',
-
-    justifyContent: 'space-around',
   },
   rectangle: {
-    // position: 'absolute',
     alignItems: 'center',
+    top: '15%',
+    marginVertical: '3%'
   },
   textRectangle: {
     fontFamily: 'Inter-Medium',
@@ -69,18 +67,20 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     position: 'absolute',
     color: colors.white,
-    left: '15%',
-    top: '5%',
+    left: '17%',
+    top: '10%',
   },
   vector: {
     position: 'absolute',
-    top: '25%',
-    left: '15%',
+    bottom: '25%',
+    left: '17%',
   },
   image: {
     position: 'absolute',
-    top: '-15%',
-    right: '15%',
+    bottom: '15%',
+    right: '17%',
+    height: 120,
+    width: 100
   },
 });
 
