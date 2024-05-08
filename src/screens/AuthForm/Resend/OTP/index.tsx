@@ -3,10 +3,9 @@ import {
   Text,
   ImageBackground,
   Image,
-  TextInput,
   TouchableOpacity,
 } from 'react-native';
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';

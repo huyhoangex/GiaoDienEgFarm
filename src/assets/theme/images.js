@@ -35,4 +35,7 @@ export const images = {
   imgHome1: require('../img/imgHome1.png'),
   imgHome2: require('../img/imgHome2.png'),
   imgHome3: require('../img/imgHome3.png'),
+  //Manage
+  bell: require('../img/bell.png'),
+  backGroundRectangle2: require('../img/backGroundRectangle2.png'),
 };
