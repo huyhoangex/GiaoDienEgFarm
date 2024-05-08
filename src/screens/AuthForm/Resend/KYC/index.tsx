@@ -6,31 +6,20 @@ import {
   TextInput,
   TouchableOpacity,
   ActivityIndicator,
+  StyleSheet,
 } from 'react-native';
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
 import {useNavigation} from '@react-navigation/native';
 import DropDownPicker from 'react-native-dropdown-picker';
-import colors from '../../../../components/color';
-import { images } from '../../../../assets/theme/images';
-import { Camera, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
+import {images} from '../../../../assets/theme/images';
 import Title from '../../../../components/Title';
+import {Camera, useCameraDevice} from 'react-native-vision-camera';
 
 export default function Index() {
-  const device = useCameraDevice('back');
-  const {hasPermission} = useCameraPermission();
-  useEffect(()=>{
-    checkPermission();
-  },[])
-  const checkPermission=async()=>{
-    const cameraPermission = Camera.getCameraPermissionStatus();
-    const microphonePermission = Camera.getMicrophonePermissionStatus();
-    console.log(cameraPermission);
-    
-  }
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const [items, setItems] = useState([
@@ -130,17 +119,25 @@ export default function Index() {
               }}>
               {/* upload front side */}
               <View style={styles.upload}>
-                <Image source={images.camera} />
-                <Text style={[styles.textupload, styles.font]}>
-                  Upload front side
-                </Text>
+                <TouchableOpacity
+                  style={{alignItems: 'center'}}
+                  onPress={() => navigation.navigate('CameraKYC')}>
+                  <Image source={images.camera} />
+                  <Text style={[styles.textupload, styles.font]}>
+                    Upload front side
+                  </Text>
+                </TouchableOpacity>
               </View>
               {/* upload reverse side */}
               <View style={styles.upload}>
-                <Image source={images.camera} />
-                <Text style={[styles.textupload, styles.font]}>
-                  Upload reverse side
-                </Text>
+                <TouchableOpacity
+                  style={{alignItems: 'center'}}
+                  onPress={() => navigation.navigate('CameraKYC')}>
+                  <Image source={images.camera} />
+                  <Text style={[styles.textupload, styles.font]}>
+                    Upload reverse side
+                  </Text>
+                </TouchableOpacity>
               </View>
             </View>
           </View>
