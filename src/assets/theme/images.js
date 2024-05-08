@@ -37,5 +37,6 @@ export const images = {
   imgHome3: require('../img/imgHome3.png'),
   iconscanseri: require('../img/scanseri.png'),
   iconmap: require('../img/iconmap.png'),
-  addphoto: require('../img/addphoto.png')
+  addphoto: require('../img/addphoto.png'),
+  tickicon: require('../img/tickicon.png'),
 };

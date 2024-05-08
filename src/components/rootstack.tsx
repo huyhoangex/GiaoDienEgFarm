@@ -16,6 +16,7 @@ import CameraKYC from '../screens/AuthForm/Resend/Camera';
 import Manage from '../screens/Manage';
 import ActivateStampsFirst from '../screens/Home/ActivateStampsFirst';
 import Pileofpillows from '../screens/Home/Pileofpillows';
+import Addproductionlog from '../screens/Home/Addproductionlog';
 
 
 const Stack = createNativeStackNavigator();
@@ -46,7 +47,8 @@ export default function RootStack() {
         name="ActivateStampsFirst"
         component={ActivateStampsFirst}
       /> */}
-      <Stack.Screen name="Pileofpillows" component={Pileofpillows} />
+      {/* <Stack.Screen name="Pileofpillows" component={Pileofpillows} /> */}
+      <Stack.Screen name="Addproductionlog" component={Addproductionlog} />
     </Stack.Navigator>
   );
 }
