@@ -1,6 +1,15 @@
 export const images = {
   //backGround
   backGround: require('../img/background.png'),
+  //icon Tabbottom
+  iconHome: require('../img/iconHome.png'),
+  iconHomeOutline: require('../img/iconHomeOutline.png'),
+  iconManage: require('../img/iconManage.png'),
+  iconManageOutline: require('../img/iconManageOutline.png'),
+  iconNews: require('../img/iconNews.png'),
+  iconNewsOutline: require('../img/iconNewsOutline.png'),
+  iconInformation: require('../img/iconInformation.png'),
+  iconInformationOutline: require('../img/iconInformationOutline.png'),
   //GetStarted
   layOut1: require('../img/layout1.png'),
   layOut2: require('../img/layout2.png'),
