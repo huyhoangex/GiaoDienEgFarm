@@ -100,14 +100,14 @@ export default function Home() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('ResendKYC')}>
+              onPress={() => navigation.navigate('Home')}>
               <LinearGradient
                 locations={[0, 1]}
                 colors={['#2AFCFF', '#00FB91']}
                 start={{x: 1, y: 0}}
                 end={{x: 0, y: 1}}
                 style={styles.gradient}>
-                <Text style={[styles.resend, styles.font]}>RESEND</Text>
+                <Text style={[styles.resend, styles.font]}>Confirm</Text>
               </LinearGradient>
             </TouchableOpacity>
           </View>
@@ -116,7 +116,7 @@ export default function Home() {
             <TouchableOpacity
               style={styles.button}
               activeOpacity={0.3}
-              onPress={() => navigation.navigate('ResendKYC')}>
+              onPress={() => navigation.goBack()}>
               <View
                 style={[
                   styles.gradient,

@@ -22,9 +22,8 @@ export default function Manage() {
         {/* title */}
         <View style={styles.title}>
           <Text style={[styles.texttitle, styles.font]}>Manage</Text>
-          <View style={{}}>
-            <Image source={images.bell} />
-          </View>
+          <Image style={{left:'240%'}} source={images.iconscanseri} />
+          <Image style={{}} source={images.bell} />
         </View>
         {/* items container */}
         <View
