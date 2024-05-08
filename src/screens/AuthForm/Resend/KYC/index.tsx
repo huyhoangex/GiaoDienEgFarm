@@ -5,6 +5,8 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  ActivityIndicator,
+  StyleSheet,
 } from 'react-native';
 import React, {useRef, useState} from 'react';
 import styles from './style';
@@ -15,6 +17,7 @@ import {useNavigation} from '@react-navigation/native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {images} from '../../../../assets/theme/images';
 import Title from '../../../../components/Title';
+import {Camera, useCameraDevice} from 'react-native-vision-camera';
 
 export default function Index() {
   const [open, setOpen] = useState(false);
@@ -116,17 +119,25 @@ export default function Index() {
               }}>
               {/* upload front side */}
               <View style={styles.upload}>
-                <Image source={images.camera} />
-                <Text style={[styles.textupload, styles.font]}>
-                  Upload front side
-                </Text>
+                <TouchableOpacity
+                  style={{alignItems: 'center'}}
+                  onPress={() => navigation.navigate('CameraKYC')}>
+                  <Image source={images.camera} />
+                  <Text style={[styles.textupload, styles.font]}>
+                    Upload front side
+                  </Text>
+                </TouchableOpacity>
               </View>
               {/* upload reverse side */}
               <View style={styles.upload}>
-                <Image source={images.camera} />
-                <Text style={[styles.textupload, styles.font]}>
-                  Upload reverse side
-                </Text>
+                <TouchableOpacity
+                  style={{alignItems: 'center'}}
+                  onPress={() => navigation.navigate('CameraKYC')}>
+                  <Image source={images.camera} />
+                  <Text style={[styles.textupload, styles.font]}>
+                    Upload reverse side
+                  </Text>
+                </TouchableOpacity>
               </View>
             </View>
           </View>
