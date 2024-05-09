@@ -39,7 +39,9 @@ export const images = {
   iconmap: require('../img/iconmap.png'),
   addphoto: require('../img/addphoto.png'),
   tickicon: require('../img/tickicon.png'),
+
   //Manage
   bell: require('../img/bell.png'),
   backGroundRectangle2: require('../img/backGroundRectangle2.png'),
+  createicon: require('../img/createicon.png')
 };
