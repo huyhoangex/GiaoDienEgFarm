@@ -13,13 +13,13 @@ import styles from './style';
 import LinearGradient from 'react-native-linear-gradient';
 import OTPTextView from 'react-native-otp-textinput';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useNavigationState} from '@react-navigation/native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {images} from '../../../assets/theme/images';
 import Title from '../../../components/Title';
 import {Camera, useCameraDevice} from 'react-native-vision-camera';
 
-export default function Index() {
+export default function Pileofpillows() {
   const navigation = useNavigation() as any;
   const input = useRef<OTPTextView>(null);
   const handleCellTextChange = async (text: any, i: any) => {
