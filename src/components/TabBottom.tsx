@@ -34,9 +34,6 @@ export default function TabBottom() {
               ? images.iconInformation
               : images.iconInformationOutline;
             customSizeWidth = focused ? size + 28 : size + 28;
-          }else if (route.name === 'Pileofpillows') {
-            iconSource = focused ? images.iconHome : images.iconHomeOutline;
-            customSizeWidth = focused ? size : size;
           }
 
           return (
@@ -66,7 +63,6 @@ export default function TabBottom() {
       <Tab.Screen name="Manage" component={Manage} />
       <Tab.Screen name="News" component={News} />
       <Tab.Screen name="Information" component={Information} />
-      <Tab.Screen name="Pileofpillows" component={Pileofpillows} />
     </Tab.Navigator>
   );
 }

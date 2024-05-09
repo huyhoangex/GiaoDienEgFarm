@@ -25,30 +25,33 @@ const Stack = createNativeStackNavigator();
 export default function RootStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Home"
+      initialRouteName="Layout1"
       screenOptions={{
         headerShown: false,
       }}>
       {/* GetStarted */}
-      {/* <Stack.Screen name="Layout1" component={LayOut1} />
+      <Stack.Screen name="Layout1" component={LayOut1} />
       <Stack.Screen name="Layout2" component={LayOut2} />
-      {/* <Stack.Screen name="Layout2" component={LayOut2} />
       <Stack.Screen name="Layout3" component={LayOut3} />
-      <Stack.Screen name="Layout4" component={LayOut4} /> */}
+      <Stack.Screen name="Layout4" component={LayOut4} />
       {/* AuthForm */}
-      {/* <Stack.Screen name="Login" component={LogIn} />
+      <Stack.Screen name="Login" component={LogIn} />
       <Stack.Screen name="Register" component={Register} />
       <Stack.Screen name="ResendOTP" component={ResendOTP} />
       <Stack.Screen name="ResendKYC" component={ResendKYC} />
-      <Stack.Screen name="CameraKYC" component={CameraKYC} /> */}
+      <Stack.Screen name="CameraKYC" component={CameraKYC} />
       {/* Home */}
-      {/* <Stack.Screen name="Home" component={TabBottom} />
+      <Stack.Screen name="Home" component={TabBottom} />
       <Stack.Screen
         name="ActivateStampsFirst"
         component={ActivateStampsFirst}
-      />  */}
-      {/* <Stack.Screen name="Pileofpillows" component={Pileofpillows} /> */}
-      {/* <Stack.Screen name="Addproductionlog" component={Addproductionlog} /> */}
+      />
+      <Stack.Screen
+        name="ActivateStampsSecond"
+        component={ActivateStampsSecond}
+      />
+      <Stack.Screen name="Addproductionlog" component={Addproductionlog} />
+      <Stack.Screen name="Pileofpillows" component={Pileofpillows} />
       <Stack.Screen
         name="Myagriculturalprocess"
         component={Myagriculturalprocess}
