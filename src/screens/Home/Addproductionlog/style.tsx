@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     left: '81%',
     top: '30%',
     width: '5%',
-    height: '44%',
+    height: '40%',
   },
 });
 export default styles;

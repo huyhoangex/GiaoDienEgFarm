@@ -37,12 +37,13 @@ export default function Home() {
         <View style={styles.containerRectangle}>
           {/* item 1 */}
           <TouchableOpacity activeOpacity={0.7} style={styles.rectangle}>
-            <Image
-              style={{width: '85%', height: 100}}
-              source={images.backGroundRectangle}></Image>
-            <Text style={styles.textRectangle}>Add production log</Text>
-            <Image style={styles.vector} source={images.vector}></Image>
-            <Image style={styles.image} source={images.imgHome1}></Image>
+            <View style={{ alignItems: 'center'}}>
+              <Image
+                source={images.backGroundRectangle}></Image>
+              <Text style={styles.textRectangle}>Add production log</Text>
+              <Image style={styles.vector} source={images.vector}></Image>
+              <Image style={styles.image} source={images.imgHome1}></Image>
+            </View>
           </TouchableOpacity>
 
           {/* item 2 */}
@@ -50,12 +51,14 @@ export default function Home() {
             onPress={() => navigation.navigate('ActivateStampsFirst')}
             activeOpacity={0.7}
             style={styles.rectangle}>
+            <View style={{ alignItems: 'center'}}>
+
             <Image
-              style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>
             <Text style={styles.textRectangle}>Activate Stamps</Text>
             <Image style={styles.vector} source={images.vector}></Image>
             <Image style={styles.image} source={images.imgHome2}></Image>
+            </View>
           </TouchableOpacity>
 
           {/* item 3 */}
@@ -63,12 +66,14 @@ export default function Home() {
             onPress={() => navigation.navigate('Pileofpillows')}
             activeOpacity={0.7}
             style={styles.rectangle}>
+            <View style={{ alignItems: 'center'}}>
+
             <Image
-              style={{width: '85%', height: 100}}
               source={images.backGroundRectangle}></Image>
             <Text style={styles.textRectangle}>Pile of pillows</Text>
             <Image style={styles.vector} source={images.vector}></Image>
             <Image style={styles.image} source={images.imgHome3}></Image>
+            </View>
           </TouchableOpacity>
         </View>
       </View>

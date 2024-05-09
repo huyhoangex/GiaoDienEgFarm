@@ -61,7 +61,6 @@ export default function Index() {
             <TouchableOpacity activeOpacity={0.7} style={styles.map}>
               <Image
                 source={images.iconmap}
-                style={{width: '70%', height: '80%'}}
               />
             </TouchableOpacity>
           </View>

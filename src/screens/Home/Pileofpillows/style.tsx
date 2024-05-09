@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     fontWeight: '400',
     marginTop: '2%',
-    fontSize: 8,
+    fontSize: 7,
     lineHeight: 10.5,
     color: 'rgba(209, 209, 209, 1)',
   },
